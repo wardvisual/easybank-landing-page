@@ -54,8 +54,12 @@
         place-items: center;
         /* Medium */
         @media screen and(min-width: 376px) {
-          text-align: start;
+          grid-template-columns: repeat(2, 1fr);
+          margin: 1rem 2rem 0 2rem;
+          grid-gap: 1rem;
+
           place-items: unset;
+          text-align: center;
         }
         /* Desktop */
         @media screen and(min-width: 961px) {
@@ -93,6 +97,11 @@
       }
     }
 
+    hr {
+      height: 1px;
+      opacity: 0.1;
+      margin-top: 1rem;
+    }
     .attribution {
       margin: 1rem 0 1rem 0;
       display: flex;
