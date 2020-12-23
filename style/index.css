@@ -170,10 +170,9 @@ button:hover {
   }
 }
 
-.header .navbar .content .logo-container {
+.header .navbar .content .logo-container a {
   display: -ms-grid;
   display: grid;
-  cursor: pointer;
   place-items: center;
 }
 
