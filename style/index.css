@@ -827,6 +827,7 @@ button:hover {
   display: grid;
   place-items: center;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .footer .content .list .action button {
@@ -838,9 +839,11 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
   font-size: 11px;
   text-align: center;
 }
