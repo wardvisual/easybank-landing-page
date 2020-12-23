@@ -1,0 +1,110 @@
+.showcase {
+  margin-top: 5rem;
+  padding-top: 8rem;
+  background-color: var(--veryLightGray);
+  max-width: 375px;
+
+  /* Medium */
+  @media screen and(min-width: 376px) {
+    max-width: 960px;
+  }
+
+  /* Desktop */
+  @media screen and(min-width: 961px) {
+    margin-top: 15rem;
+    max-width: 100%;
+  }
+
+  .content {
+    margin: var(--mobileMargin);
+    /*Layout*/
+    display: grid;
+    grid-template-rows: auto 1fr;
+    text-align: center;
+    /* Medium */
+    @media screen and(min-width: 376px) {
+      text-align: unset;
+      margin: var(--laptopMargin);
+    }
+    /* Desktop */
+    @media screen and(min-width: 961px) {
+      text-align: unset;
+
+      margin: var(--desktopMargin);
+      margin-bottom: 4rem;
+      /* Layout */
+      display: grid;
+      grid-template-rows: auto 1fr;
+      grid-auto-columns: auto;
+    }
+
+    .heading {
+      margin-bottom: 2rem;
+      display: grid;
+
+      /* Medium */
+      @media screen and(min-width: 376px) {
+        justify-content: space-between;
+      }
+      /* Desktop */
+      @media screen and(min-width: 961px) {
+        justify-content: space-between;
+
+        p:nth-child(2) {
+          width: 30rem;
+        }
+      }
+      span {
+        p {
+          font-size: var(--fontM1);
+          font-weight: var(--weight2);
+          color: var(--darkBlue);
+          line-height: 40px;
+        }
+      }
+
+      p {
+        margin-top: 1rem;
+      }
+    }
+
+    .services {
+      margin-top: 2rem;
+      display: grid;
+
+      /* Medium */
+      @media screen and(min-width: 376px) {
+        /* Layout */
+        grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+        grid-gap: 1rem;
+      }
+      /* Desktop */
+      @media screen and(min-width: 961px) {
+        /* Layout */
+        grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+        grid-gap: 3rem;
+
+        .service {
+          text-align: start;
+          p:nth-child(3) {
+            width: 18rem;
+          }
+        }
+      }
+
+      .service {
+        margin-bottom: 2rem;
+
+        img {
+          margin-bottom: 1rem;
+        }
+        p:nth-child(2) {
+          font-size: var(--fontM2);
+          font-weight: var(--weight2);
+          color: var(--darkBlue);
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

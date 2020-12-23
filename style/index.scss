@@ -1,0 +1,53 @@
+@import url("https://fonts.google.com/specimen/Public+Sans");
+
+/* Default */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  overflow-x: hidden;
+  // font-size: 18px;
+  font-size: 15px;
+  color: var(--grayishBlue);
+  line-height: 27px;
+}
+
+/* Root */
+:root {
+  /* == COLORS ==*/
+  /* Primary */
+  --darkBlue: hsl(233, 26%, 24%);
+  --lineGreen: hsl(136, 65%, 51%);
+  --brightCyan: hsl(192, 70%, 51%);
+  /* Neutral */
+  --grayishBlue: hsl(233, 8%, 62%);
+  --lightGrayishBlue: hsl(220, 16%, 96%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+
+  --transition: all 0.5s;
+  --weight1: 300;
+  --weight2: 400;
+  --weight3: 700;
+  --fontM1: 2.2rem;
+  --fontM2: 1.2rem;
+  --fontM3: 1.1rem;
+  --p2: 13px;
+
+  /* Margins */
+  --mobileMargin: 0 1rem 0 1rem;
+  --laptopMargin: 0 3rem 0 3rem;
+  --desktopMargin: 0 8rem 0 8rem;
+}
+
+/* Components CSS */
+@import "./scss/_reset.scss";
+@import "./scss/_hero.scss";
+@import "./scss/_main.scss";
+@import "./scss/_showcase.scss";
+@import "./scss/_articles.scss";
+@import "./scss/_footer.scss";

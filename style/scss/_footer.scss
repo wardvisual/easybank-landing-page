@@ -1,0 +1,109 @@
+.footer {
+  margin-top: 5rem;
+  padding-top: 5rem;
+  background-color: var(--darkBlue);
+  max-width: 375px;
+
+  /* Medium */
+  @media screen and(min-width: 376px) {
+    max-width: 960px;
+  }
+  @media screen and(min-width: 961px) {
+    max-width: 100%;
+  }
+  .content {
+    margin: var(--mobileMargin);
+    /* Desktop */
+    @media screen and(min-width: 961px) {
+      margin: var(--desktopMargin);
+    }
+    .list {
+      /* Layout */
+      display: grid;
+      place-items: center;
+      /* Desktop */
+      @media screen and(min-width: 961px) {
+        grid-template-columns: repeat(auto-fit, minmax(270px, auto));
+        grid-gap: 1rem;
+      }
+      .icons {
+        display: grid;
+
+        .logo-container {
+          display: grid;
+          place-items: center;
+          img {
+            color: var(--lightGrayishBlue);
+          }
+        }
+        .social-media {
+          margin-top: 1.5rem;
+          display: flex;
+          a {
+            img {
+              padding: 10px;
+              color: var(--lightGrayishBlue);
+            }
+          }
+        }
+      }
+
+      .menu {
+        margin-top: 1.5rem;
+        display: grid;
+        place-items: center;
+        /* Medium */
+        @media screen and(min-width: 376px) {
+          text-align: start;
+          place-items: unset;
+        }
+        /* Desktop */
+        @media screen and(min-width: 961px) {
+          grid-template-columns: repeat(2, 1fr);
+          margin: 0 2rem 0 2rem;
+          grid-gap: 1rem;
+
+          place-items: unset;
+          text-align: start;
+        }
+        li {
+          a {
+            color: var(--lightGrayishBlue);
+            line-height: 40px;
+            &:hover {
+              color: var(--lineGreen);
+              transition: var(--transition);
+            }
+            /* Desktop */
+            @media screen and(min-width: 961px) {
+              line-height: 20px;
+            }
+          }
+        }
+      }
+
+      .action {
+        display: grid;
+        place-items: center;
+        margin-bottom: 1rem;
+
+        button {
+          margin: 1.5rem 0 1.2rem 0;
+        }
+      }
+    }
+
+    .attribution {
+      margin: 1rem 0 1rem 0;
+
+      display: flex;
+      justify-content: center;
+
+      font-size: 11px;
+      text-align: center;
+      a {
+        color: hsl(228, 45%, 44%);
+      }
+    }
+  }
+}

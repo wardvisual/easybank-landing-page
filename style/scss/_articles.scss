@@ -1,0 +1,115 @@
+.articles-container {
+  margin-top: 5rem;
+  padding-top: 4rem;
+  max-width: 375px;
+  /* Medium */
+  @media screen and(min-width: 376px) {
+    max-width: 960px;
+  }
+
+  /* Desktop */
+  @media screen and(min-width: 961px) {
+    max-width: 100%;
+  }
+
+  .content {
+    margin: var(--mobileMargin);
+
+    /*Layout*/
+    display: grid;
+    grid-template-rows: auto 1fr;
+    text-align: center;
+    /* Medium */
+    @media screen and(min-width: 376px) {
+      margin: var(--laptopMargin);
+      text-align: unset;
+    }
+
+    /* Desktop */
+    @media screen and(min-width: 961px) {
+      text-align: unset;
+
+      margin: var(--desktopMargin);
+      margin-bottom: 4rem;
+      /* Layout */
+      display: grid;
+      grid-template-rows: auto 1fr;
+      grid-auto-columns: auto;
+    }
+
+    .heading {
+      p {
+        font-size: var(--fontM1);
+        font-weight: var(--weight2);
+        color: var(--darkBlue);
+        text-align: center;
+      }
+
+      display: grid;
+
+      /* Medium */
+      @media screen and(min-width: 376px) {
+        justify-content: space-between;
+      }
+      /* Desktop */
+      @media screen and(min-width: 961px) {
+        justify-content: space-between;
+      }
+    }
+
+    .articles {
+      display: grid;
+      /* Medium */
+      @media screen and(min-width: 376px) {
+        /* Layout */
+        grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+        grid-gap: 1rem;
+      }
+      /* Desktop */
+      @media screen and(min-width: 961px) {
+        /* Layout */
+        grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+        grid-gap: 1rem;
+
+        .article {
+          text-align: start;
+        }
+      }
+      .article {
+        img:nth-child(1) {
+          max-height: 200px;
+        }
+        img {
+          width: 100%;
+          margin-top: 3.5rem;
+          /* Medium */
+          @media screen and(min-width: 376px) {
+            max-height: 500px;
+          }
+        }
+
+        .text {
+          padding: 20px;
+          padding-bottom: unset;
+          p:nth-child(1) {
+            font-size: var(--p2);
+            margin-bottom: 0.5rem;
+          }
+          p:nth-child(2) {
+            font-size: var(--fontM3);
+            font-weight: var(--weight2);
+            color: var(--darkBlue);
+            margin-bottom: 0.5rem;
+            &:hover {
+              color: var(--lineGreen);
+              transition: var(--transition);
+              cursor: pointer;
+            }
+          }
+          p:nth-child(3) {
+          }
+        }
+      }
+    }
+  }
+}

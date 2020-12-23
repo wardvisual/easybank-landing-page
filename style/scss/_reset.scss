@@ -1,0 +1,27 @@
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--darkBlue);
+}
+
+input {
+  outline: none;
+}
+button {
+  background: linear-gradient(90deg, var(--lineGreen), var(--brightCyan));
+  padding: 13px 25px 13px 25px;
+  font-weight: var(--weight1);
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  color: var(--white);
+  &:hover {
+    transition: var(--transition);
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
