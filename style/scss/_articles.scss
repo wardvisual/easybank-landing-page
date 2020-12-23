@@ -70,12 +70,10 @@
         /* Layout */
         grid-template-columns: repeat(auto-fit, minmax(280px, auto));
         grid-gap: 1rem;
-
-        .article {
-          text-align: start;
-        }
       }
       .article {
+        text-align: start;
+
         img:nth-child(1) {
           max-height: 200px;
         }

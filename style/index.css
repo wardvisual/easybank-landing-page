@@ -657,9 +657,10 @@ button:hover {
         grid-template-columns: repeat(auto-fit, minmax(280px, auto));
     grid-gap: 1rem;
   }
-  .articles-container .content .articles .article {
-    text-align: start;
-  }
+}
+
+.articles-container .content .articles .article {
+  text-align: start;
 }
 
 .articles-container .content .articles .article img:nth-child(1) {
