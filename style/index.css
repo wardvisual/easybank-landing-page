@@ -419,9 +419,6 @@ button:hover {
   display: grid;
   -ms-grid-rows: (auto)[4];
       grid-template-rows: repeat(4, auto);
-  /* Mobile */
-  /* Tablet */
-  /* Desktop */
 }
 
 .showcase {
