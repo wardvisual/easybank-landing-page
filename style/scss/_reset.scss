@@ -8,6 +8,17 @@ a {
   color: var(--darkBlue);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--lightGrayishBlue);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--lineGreen);
+}
+
 input {
   outline: none;
 }
