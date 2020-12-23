@@ -423,7 +423,7 @@ button:hover {
 
 .showcase {
   margin-top: 5rem;
-  padding-top: 8rem;
+  padding: 5rem 0 3rem 0;
   background-color: var(--veryLightGray);
   max-width: 375px;
   /* Medium */
@@ -562,7 +562,6 @@ button:hover {
 }
 
 .articles-container {
-  margin-top: 5rem;
   padding-top: 4rem;
   max-width: 375px;
   /* Medium */
