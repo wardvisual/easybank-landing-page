@@ -173,6 +173,7 @@ button:hover {
 .header .navbar .content .logo-container {
   display: -ms-grid;
   display: grid;
+  cursor: pointer;
   place-items: center;
 }
 
