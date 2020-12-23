@@ -267,6 +267,16 @@ button:hover {
   transition: var(--transition);
 }
 
+.header .navbar .content .mobile-menu ul hr {
+  height: 1px;
+  opacity: 0.5;
+  margin-top: 1rem;
+}
+
+.header .navbar .content .mobile-menu ul button {
+  margin-top: 1rem;
+}
+
 @media screen and (min-width: 376px) {
   .header .navbar .content .mobile-menu {
     right: 0;
