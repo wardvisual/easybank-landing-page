@@ -32,10 +32,10 @@
         .logo-container {
           display: grid;
           place-items: center;
-          background-color: var(--white);
           padding: 10px;
           img {
-            color: var(--lightGrayishBlue);
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+              brightness(102%) contrast(102%);
           }
         }
         .social-media {
