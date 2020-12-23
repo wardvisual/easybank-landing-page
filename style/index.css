@@ -243,8 +243,8 @@ button:hover {
 
 .header .navbar .content .mobile-menu ul li,
 .header .navbar .content .mobile-menu ul a {
-  line-height: 40px;
   font-weight: var(--weight2);
+  line-height: 40px;
 }
 
 .header .navbar .content .mobile-menu ul li:hover,
