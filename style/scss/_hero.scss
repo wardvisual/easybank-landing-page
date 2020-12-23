@@ -102,7 +102,7 @@
         width: 90%;
         border-radius: 10px;
         padding: 20px;
-        box-shadow: var(--darkBlue) 0 0 10px 0;
+        box-shadow: var(--darkBlue) 0 0 5px 0;
         justify-self: center;
         ul {
           display: flex;
@@ -112,7 +112,7 @@
           li,
           a {
             line-height: 40px;
-            font-weight: var(--weight3);
+            font-weight: var(--weight2);
 
             &:hover {
               color: var(--lineGreen);

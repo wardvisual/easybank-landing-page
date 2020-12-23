@@ -221,8 +221,8 @@ button:hover {
   width: 90%;
   border-radius: 10px;
   padding: 20px;
-  -webkit-box-shadow: var(--darkBlue) 0 0 10px 0;
-          box-shadow: var(--darkBlue) 0 0 10px 0;
+  -webkit-box-shadow: var(--darkBlue) 0 0 5px 0;
+          box-shadow: var(--darkBlue) 0 0 5px 0;
   -ms-grid-column-align: center;
       justify-self: center;
   /* Medium */
@@ -244,7 +244,7 @@ button:hover {
 .header .navbar .content .mobile-menu ul li,
 .header .navbar .content .mobile-menu ul a {
   line-height: 40px;
-  font-weight: var(--weight3);
+  font-weight: var(--weight2);
 }
 
 .header .navbar .content .mobile-menu ul li:hover,
